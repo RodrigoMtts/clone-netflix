@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .mudaCor{
+            background-color: yellow;
+            width: 400px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        aa
+    </div>
+    <div id="b">
+        bb
+    </div>
+    <button>cresce</button>
+</body>
+<script>
+    let e = document.querySelector('div')
+    let button = document.querySelector('button')
+    e.style.width = "150px"
+    e.style.height = "0px"
+    // e.style.backgroundColor = "red"
+    e.style.transition = "all 5s ease"
+    button.addEventListener('click', function(){
+        let n = document.createElement('p')
+        
+        n.innerHTML = "olá mundo"
+        n.style.opacity = '0'
+        n.style.transition = "all 5s ease"
+        e.append(n)
+        setInterval(function () {
+            e.style.backgroundColor = "red"
+            n.style.opacity = "1"
+            e.style.height = "400px"
+        }, 10);
+        // e.className = "mudaCor"
+        console.log("1111")
+    })
+   
+</script>
+</html>

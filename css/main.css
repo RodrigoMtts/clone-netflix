@@ -1,0 +1,108 @@
+:root{
+    --amarelo: #f7ca35;
+    --preto: #333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Limita os elementos filhos dentro da caixa do pai*/
+}
+
+/*elementos base*/
+
+body{
+    background-color:  var(--preto);
+    font-family: Arial;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--amarelo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*manga principal*/
+
+.manga-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/banner-5.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.manga-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.manga-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0, 0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.manga-principal .container{
+    width: 70%;
+}
+
+.box-manga{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*lista de mangas*/
+
+.carrosel-mangas{
+    margin: 15px 20px;
+}
+
+h3{
+    font-size: 28px;
+    font-family: Helvetica, sans-serif;
+}

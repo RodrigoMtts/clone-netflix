@@ -1,0 +1,25 @@
+.modal{
+    width: 80vw;
+    /* height: 50vh; */
+    margin-top: 20vh;
+    padding: 5%;
+    position: fixed;
+    top: 0px;
+    left: 100px;
+    background-color: #666;
+    z-index: 2;
+    border-radius: 5px;
+}
+.modal h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.modal p{
+    margin-bottom: 40px;
+}
+
+.modal li{
+    list-style: none;
+    border-bottom: solid 1px;
+}
